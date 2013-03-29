@@ -1,0 +1,22 @@
+p {
+  color:#885ac7;
+  background:#00FFCC;
+  width:200px;
+}
+
+
+.anzeige {
+  border: solid thin;
+  width: 325px;
+  height: 180px;
+  padding: 15px;
+  margin: 20px;
+}
+
+.anzeige:hover {
+  border: 3px;
+}
+
+.eintrag {
+  font-size:10px;
+}
