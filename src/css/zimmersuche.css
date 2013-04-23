@@ -1,0 +1,215 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #EDEDED; 
+	font: 11px Verdana, Arial, Helvetica, sans-serif; color:#333333;
+}
+
+h1 {
+	margin-top: 20px;
+	padding: 0 10px 0 10px;
+	display: block;
+}
+
+h2 {
+	color: #FFFFFF;
+	background-color: #AC4848;
+	margin-top: 5px;
+	margin-bottom: 1px;
+	padding-left: 10px;
+}
+
+#menue ul {padding:0px; z-index:100}
+#menue li {list-style-type:none; float:left; width:90px; text-align:center; position:relative}
+#menue li ul {display:none; padding-top:3px; position:absolute;}
+#menue li:hover ul {display:block; padding-top:8px;}
+#menue li ul li {background-color:#AC4848; border-bottom:1px solid #FFFFFF;}
+
+#container {
+	background-color: #FFFFFF;
+	width: 1050px;
+	margin: auto;
+	margin-top: 10px;
+	border: 1px solid;
+	box-shadow: 10px 10px 15px silver;
+}
+
+/* Element, das eine Liste der neusten Anzeigen enhtält */
+	#neusteAnzeigen {
+	position:relative;
+		padding: 15px;
+		float:left;
+		width: 5o%;
+		margin-left:20px;
+		box-shadow: 5px 5px 10px silver;
+		margin-bottom: 20px;
+		background-color: #EDEDED;
+	}
+	
+	#neueAnzeigen {
+		list-style-type:none;
+		display: inline;
+	}
+	
+	#neueAnzeigen li { 
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid grey;
+		height: 100px;
+		
+	}
+	
+	#neueAnzeigen li a {
+		text-decoration: none;
+		color: #333333;
+	}
+	
+	#neueAnzeigen li:hover h3 {
+		color: #333333;
+		text-decoration: underline 
+	}
+	
+	#neueAnzeigen h3 {
+		
+	}
+	
+	#neueAnzeigen .neueAnzeigenFoto {
+		width: 60px;
+		height: 60px;
+		float:left;
+		border: 1px solid;
+		margin-right: 5px;
+	}
+	
+	#neueAnzeigen .neueAnzeigenBeschreibung {
+		
+	}
+	
+	#neueAnzeigen .neueAnzeigenPreis {
+		padding-top: 5px;
+		color: #990000;
+	}
+	
+	/* Vorschaufotos werden auf 60x60 begrenzt */
+	#neueAnzeigen li span img {
+		width: 60px;
+		height: 60px;
+	}
+
+
+
+/* Spezielle Border-Klassen */
+/* Umrandung, mit abgerundeten Ecken */
+.border_rund {
+	border: 1px solid;
+	border-radius: 16px;
+	border-color: #EDEDED;	
+}
+
+.border_oben_rund {
+	border-radius: 16px 16px;
+}
+.border_unten_rund {
+	border-radius: 0 0 16px 16px;
+}
+
+#inhalt_container {
+	diplay: block;
+	height: 100%;
+	background-color: #FFFFFF;
+	margin: 20px 10px 30px 10px;
+}
+
+/* Farbige Leiste am oberen und unteren Bildschirmrand*/
+.leiste_lang {
+	width: 100%;
+	height: 20px;
+	clear: both;
+	color: #FFFFFF;
+	background-color: #AC4848;
+}
+ 
+/*.leiste_lang*/ a {
+	color: #FFFFFF;
+	visited: #FFFFCC;
+	text-decoration: none;
+}
+
+/*.leiste_lang*/ a:hover {
+	color: #CCCCB8;
+}
+
+/* Anmelde und Schnellsuche Drop-Down */
+.ddown_fenster {
+	display: none;
+	position: absolute; 
+	width: 180px;
+	height: 100px;
+	margin-top: 10px;
+	padding: 0 8px 0 8px;
+	color: #000000;
+	border: solid thin;
+	border-radius: 16px;
+}
+
+#popup_forms {
+	float: right;
+	margin-right: 30px;
+}
+
+#popup_forms a.dropdown {
+	padding-left: 15px;
+}
+
+#fussleiste {
+	margin-top: 20px;
+	text-align: center;
+	font-size: x-small;
+}
+
+/*Suchformular*/
+.suchformular {
+	position:relative;
+	padding: 15px;
+	margin-bottom: 10px;
+  	width: 50%;
+  	/*435px;*/
+  	float: left;
+  	box-shadow: 5px 5px 10px silver;
+  	background-color: #EDEDED;
+}
+
+.reihe {
+  	clear: both;
+  	padding: 2px 0px;
+}
+
+.label {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-top: 3px;	
+	padding-right: 5px;
+}
+
+.feld {
+	float: right;
+	width: 300px;
+	text-align: left;
+} 
+
+.knopf {
+	clear: both;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+#kategorien {
+	position:relative;
+}
+
+#clear{
+	clear:both;
+}
+
